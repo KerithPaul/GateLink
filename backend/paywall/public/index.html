@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GateLink Paywall</title>
+  <script>
+    window.x402 = {
+      paymentRequirements: [{ "scheme": "exact", "network": "algorand-testnet", "maxAmountRequired": "30000", "resource": "http://localhost:3000/d83fdc63-0b6e-4774-b8a8-6eee907f5dc8", "description": "Payment for content", "mimeType": "", "payTo": "AQJMD2YEGDFSJFZ3MIAMVWL3RK6BM46ZGPFRTUEO7Z3OTPSFVDJ4JFG5DI", "maxTimeoutSeconds": 60, "asset": "10458941", "outputSchema": { "input": { "type": "http", "method": "GET" } }, "extra": { "feePayer": "VLH7NENIWAO3KKLHUI5YTIKD5ELNIGINSS76NQE7AL3SLCUKMF6ZK55WPU" } }],
+      currentUrl: "http://localhost:3000/pay/d83fdc63-0b6e-4774-b8a8-6eee907f5dc8",
+      testnet: true
+    }
+  </script>
+</head>
+
+<body style="margin: 0; height: 100%; min-height: 100vh;">
+  <div id="root"></div>
+</body>
+
+</html>

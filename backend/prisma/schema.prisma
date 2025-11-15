@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Link {
+  id            String    @id @default(uuid())
+  creatorWallet String    @db.VarChar(58)
+  contentType   String    @map("content_type") // "FILE" or "URL"
+  contentPath   String?   @map("content_path") @db.Text // File path or external URL
+  price         Decimal   @db.Decimal(18, 6) // Price in USD
+  network       String    @db.VarChar(20) // "algorand" or "algorand-testnet"
+  assetId       BigInt    @map("asset_id") // ASA ID
+  decimals      Int       @default(6)
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  payments Payment[]
+
+  @@map("links")
+  @@index([creatorWallet])
+}
+
+model Payment {
+  id          String   @id @default(uuid())
+  linkId      String   @map("link_id")
+  payerAddress String  @map("payer_address") @db.VarChar(58)
+  amount      Decimal  @db.Decimal(18, 6) // Amount paid in atomic units (converted from USD)
+  txnId       String?  @map("txn_id") @db.VarChar(52) // Algorand transaction ID
+  txnGroupId  String?  @map("txn_group_id") @db.VarChar(52) // Transaction group ID
+  timestamp   DateTime @default(now())
+
+  link Link @relation(fields: [linkId], references: [id], onDelete: Cascade)
+
+  @@map("payments")
+  @@index([linkId])
+  @@index([payerAddress])
+}
+

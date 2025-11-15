@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 200 15% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 200 15% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 200 15% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 173 80% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 10% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 200 10% 18%;
+    --muted-foreground: 200 5% 65%;
+
+    --accent: 173 70% 55%;
+    --accent-foreground: 200 15% 8%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 12% 25%;
+    --input: 200 12% 25%;
+    --ring: 173 80% 40%;
+
+    --radius: 0.75rem;
+
+    /* Gradient tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(173 80% 40%), hsl(173 70% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(173 80% 40% / 0.2), hsl(173 70% 55% / 0.2));
+    --gradient-card: linear-gradient(180deg, hsl(200 15% 10%), hsl(200 15% 12%));
+    
+    /* Glow effects */
+    --glow-primary: 0 0 40px hsl(173 80% 40% / 0.4);
+    --glow-accent: 0 0 40px hsl(173 70% 55% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 300ms ease-in-out;
+  }
+
+  .transition-fast {
+    transition: all 150ms ease-in-out;
+  }
+}
