@@ -521,7 +521,7 @@ MIT License
 ## 🔗 Links
 
 - **Main Repository**: https://github.com/KerithPaul/GateLink
-- **X402 Protocol**: https://402.wtf
+- **X402 Protocol**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Docs**: https://developer.algorand.org
 - **Prisma Docs**: https://www.prisma.io/docs
 - **Express Docs**: https://expressjs.com

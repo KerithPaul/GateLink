@@ -162,7 +162,7 @@ pnpm prisma:generate
 ## 📚 Additional Resources
 
 - **Full Documentation**: See README.md files in root, backend, and frontend
-- **X402 Protocol**: https://402.wtf
+- **X402 Protocol**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Docs**: https://developer.algorand.org
 - **TestNet Explorer**: https://testnet.algoexplorer.io
 - **Lora IDE**: https://lora.algokit.io

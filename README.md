@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-KerithPaul%2FGateLink-blue?logo=github)](https://github.com/KerithPaul/GateLink)
 [![Algorand](https://img.shields.io/badge/Blockchain-Algorand-black?logo=algorand)](https://algorand.com)
-[![X402 Protocol](https://img.shields.io/badge/Protocol-X402-green)](https://402.wtf)
+[![X402 Protocol](https://img.shields.io/badge/Protocol-X402-green)](https:///)
 
 GateLink is a full-stack Web3 application that enables creators to monetize their content through blockchain-based payments using the X402 protocol on Algorand. Upload files or share URLs, set a price, and get paid instantly when users access your content.
 
@@ -23,7 +23,7 @@ GateLink combines the power of Algorand blockchain with a modern web interface t
 ## 🔗 Important Links
 
 - **GitHub Repository**: https://github.com/KerithPaul/GateLink
-- **X402 Protocol Specification**: https://402.wtf
+- **X402 Protocol Specification**: https:///
 - **Algorand Developer Portal**: https://developer.algorand.org
 - **Algorand TestNet Explorer**: https://testnet.algoexplorer.io
 - **Lora (Algorand IDE)**: https://lora.algokit.io
@@ -56,6 +56,60 @@ GateLink/
 ```
 
 ## 🚀 Quick Start Guide
+
+### Choose Your Deployment Method
+
+**🐳 Docker (Recommended for Production)**
+- Complete stack with one command
+- Includes MySQL, Backend, and Frontend
+- Automatic health checks and restarts
+- See [Docker Deployment](#-docker-deployment-recommended) below
+
+**💻 Local Development**
+- Manual setup for development
+- Hot-reload for both frontend and backend
+- See [Local Development Setup](#local-development-setup) below
+
+---
+
+## 🐳 Docker Deployment (Recommended)
+
+### Prerequisites
+
+- **Docker** v20.10+ ([Install](https://docs.docker.com/get-docker/))
+- **Docker Compose** v2.0+ ([Install](https://docs.docker.com/compose/install/))
+- **Algorand Wallet** with mnemonic phrase
+
+### Quick Deploy
+
+**1. Clone and Configure:**
+```bash
+git clone https://github.com/KerithPaul/GateLink.git
+cd GateLink
+cp .env.example .env
+# Edit .env with your FACILITATOR_MNEMONIC and passwords
+```
+
+**2. Deploy (Automated):**
+```bash
+# Linux/Mac
+chmod +x deploy.sh
+./deploy.sh
+
+# Windows PowerShell
+.\deploy.ps1
+```
+
+**3. Access Application:**
+- Frontend: http://localhost:8080
+- Backend: http://localhost:3000
+- Health: http://localhost:3000/health
+
+**📚 Complete Docker Guide:** See [DOCKER_GUIDE.md](DOCKER_GUIDE.md) for detailed instructions.
+
+---
+
+## 💻 Local Development Setup
 
 ### Prerequisites
 
@@ -228,13 +282,13 @@ node -e "const algosdk = require('algosdk'); const account = algosdk.generateAcc
 
 **Facilitator Account (Example - DO NOT use in production):**
 ```
-Address: SATISHQOPKE5WFYSLDMUTDBTWMH25LEJFOHVUEVOU3WXS2ZCFJGYIAVXME
+Address: BC2M462RMK5JMX4G5FDLNDKJBX5NVRC62BLZWW2TWMOEIOCQC7XNLWEZCI
 Network: Algorand TestNet
 Purpose: Fee payer for gasless transactions
 ```
 
 **View on Explorer:**
-https://testnet.algoexplorer.io/address/SATISHQOPKE5WFYSLDMUTDBTWMH25LEJFOHVUEVOU3WXS2ZCFJGYIAVXME
+https://testnet.algoexplorer.io/address/BC2M462RMK5JMX4G5FDLNDKJBX5NVRC62BLZWW2TWMOEIOCQC7XNLWEZCI
 
 ## 🔧 Smart Contract Deployment
 
@@ -522,7 +576,29 @@ lsof -ti:3000 | xargs kill -9
 
 ## 🌐 Deployment
 
-### Backend Deployment
+### Docker Deployment (Recommended)
+
+**Production with Docker:**
+```bash
+# 1. Configure environment
+cp .env.example .env
+# Edit .env with production settings
+
+# 2. Deploy
+docker-compose up -d
+
+# 3. Check status
+docker-compose ps
+
+# 4. View logs
+docker-compose logs -f
+```
+
+**Complete Docker Guide:** See [DOCKER_GUIDE.md](DOCKER_GUIDE.md)
+
+### Manual Deployment
+
+#### Backend Deployment
 
 **1. Set Production Environment Variables**
 ```env
@@ -551,7 +627,7 @@ cd backend
 pnpm start
 ```
 
-### Frontend Deployment
+#### Frontend Deployment
 
 **1. Set Production Environment Variables**
 ```env
@@ -614,7 +690,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For issues and questions:
 - **GitHub Issues**: https://github.com/KerithPaul/GateLink/issues
-- **X402 Protocol**: https://402.wtf
+- **X402 Protocol**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Docs**: https://developer.algorand.org
 - **Algorand Discord**: https://discord.gg/algorand
 
@@ -630,7 +706,7 @@ For issues and questions:
 
 ## 📚 Additional Resources
 
-- **X402 Protocol Spec**: https://402.wtf
+- **X402 Protocol Spec**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Developer Portal**: https://developer.algorand.org
 - **Algorand SDK Documentation**: https://developer.algorand.org/docs/sdks/
 - **Prisma Documentation**: https://www.prisma.io/docs
@@ -652,7 +728,5 @@ For issues and questions:
 - 🚧 Multi-asset support (planned)
 
 ---
-
-**Made with ❤️ for the Web3 creator economy**
 
 **Repository**: https://github.com/KerithPaul/GateLink
