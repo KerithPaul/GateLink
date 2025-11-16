@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-KerithPaul%2FGateLink-blue?logo=github)](https://github.com/KerithPaul/GateLink)
 [![Algorand](https://img.shields.io/badge/Blockchain-Algorand-black?logo=algorand)](https://algorand.com)
-[![X402 Protocol](https://img.shields.io/badge/Protocol-X402-green)](https:///)
+[![X402 Protocol](https://img.shields.io/badge/Protocol-X402-green)](https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/)
 
 GateLink is a full-stack Web3 application that enables creators to monetize their content through blockchain-based payments using the X402 protocol on Algorand. Upload files or share URLs, set a price, and get paid instantly when users access your content.
 
@@ -23,7 +23,7 @@ GateLink combines the power of Algorand blockchain with a modern web interface t
 ## 🔗 Important Links
 
 - **GitHub Repository**: https://github.com/KerithPaul/GateLink
-- **X402 Protocol Specification**: https:///
+- **X402 Protocol Specification**: https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Developer Portal**: https://developer.algorand.org
 - **Algorand TestNet Explorer**: https://testnet.algoexplorer.io
 - **Lora (Algorand IDE)**: https://lora.algokit.io
@@ -690,7 +690,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For issues and questions:
 - **GitHub Issues**: https://github.com/KerithPaul/GateLink/issues
-- **X402 Protocol**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
+- **X402 Protocol**: https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Docs**: https://developer.algorand.org
 - **Algorand Discord**: https://discord.gg/algorand
 
@@ -706,7 +706,7 @@ For issues and questions:
 
 ## 📚 Additional Resources
 
-- **X402 Protocol Spec**: https://https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
+- **X402 Protocol Spec**: https://github.com/KerithPaul/GateLink/blob/main/backend/scheme_exact_algo.md/
 - **Algorand Developer Portal**: https://developer.algorand.org
 - **Algorand SDK Documentation**: https://developer.algorand.org/docs/sdks/
 - **Prisma Documentation**: https://www.prisma.io/docs
